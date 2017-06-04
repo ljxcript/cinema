@@ -11,7 +11,7 @@
       <x-input title="密码" v-model="psword"></x-input>
     </group>
     <divider></divider>
-    <x-button type="primary">登录</x-button>
+    <x-button type="primary" @click.native="login">登录</x-button>
     <divider></divider>
     <x-button  plain type="primary" @click.native="gotoRegister">注册</x-button>
   </div>
@@ -39,6 +39,12 @@ export default {
     gotoRegister: function () {
       console.log('executing')
       window.location = '#register'
+    },
+    isValid: function () {
+      console.log('validating the form data')
+    },
+    login: function () {
+      window.location = '#filmson'
     }
   }
 }
