@@ -1,6 +1,10 @@
 <template>
   <div>
-    <x-header>正在热映</x-header>
+    <x-header>
+      正在热映
+      <icon type="search" class="film-search-icon" @click.native="filmSearch"></icon>
+    </x-header>
+
     <div class="vux-demo">
       <img class="banner-img" :src="bannerSrc">
     </div>
@@ -31,7 +35,7 @@
 </template>
 
 <script>
-import { Flexbox, FlexboxItem, Group, Cell, XInput, XButton, Divider, XHeader } from 'vux'
+import { Flexbox, FlexboxItem, Group, Cell, XInput, XButton, Divider, XHeader, Icon } from 'vux'
 
 export default {
   components: {
@@ -42,7 +46,8 @@ export default {
     Divider,
     XHeader,
     Flexbox,
-    FlexboxItem
+    FlexboxItem,
+    Icon
   },
   data () {
     return {
@@ -83,6 +88,9 @@ export default {
     },
     filmDetail: function (id) {
       window.location = '#filmDetail/' + id
+    },
+    filmSearch: function () {
+      window.location = '#filmSearch'
     }
   }
 }
@@ -91,6 +99,11 @@ export default {
 <style>
 .vux-demo {
   text-align: center;
+}
+.film-search-icon {
+  position: absolute;
+  right: 10px;
+  top: 30%;
 }
 .logo {
   width: 100px;
