@@ -2,6 +2,7 @@
   <div>
     <search @on-submit="searchFilm" @on-change="getResult" v-model="searchFilmName" :results="results" @result-click="resultClick" position="absolute"></search>
 
+    <h5 class="hot-search-header">热门搜索</h5>
     <div class="hot-search-list">
       <flexbox>
         <flexbox-item v-for="film in filmName" @click.native="filmDetail(film.id)">
@@ -74,6 +75,9 @@ export default {
 </script>
 
 <style>
+.hot-search-header {
+  margin: 10px;
+}
 .hot-search-list {
   margin-top: 10px;
   padding: 5px;
