@@ -5,6 +5,7 @@ import Login from '@/components/Login'
 import FilmsOn from '@/components/Films-On'
 import FilmDetail from '@/components/Film-Detail'
 import FilmSearch from '@/components/Film-Search'
+import CinemaList from '@/components/Cinema-List'
 console.log(FilmsOn)
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/filmSearch',
       name: 'fimeSearch',
       component: FilmSearch
+    },
+    {
+      path: '/cinemaList',
+      name: 'cinemaList',
+      component: CinemaList
     }
   ]
 })

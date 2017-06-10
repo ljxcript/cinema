@@ -5,7 +5,7 @@
         <img slot="icon" src="../assets/logo.png">
         <span slot="label">首页</span>
       </tabbar-item>
-      <tabbar-item link='/cinema'>
+      <tabbar-item link='/cinemaList'>
         <img slot="icon" src="../assets/logo.png">
         <span slot="label">影院</span>
       </tabbar-item>
