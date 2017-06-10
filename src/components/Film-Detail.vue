@@ -40,11 +40,13 @@
       <p class="comment-wrapper" v-for="comment in filmDetail.comments">{{comment}}</p>
       <divider></divider>
     </group>
+    <bottom-tab></bottom-tab>
   </div>
 </template>
 
 <script>
 import { Flexbox, FlexboxItem, Group, Cell, XInput, XButton, Divider, XHeader } from 'vux'
+import BottomTab from './Bottom-Tab'
 
 export default {
   components: {
@@ -55,7 +57,8 @@ export default {
     Divider,
     XHeader,
     Flexbox,
-    FlexboxItem
+    FlexboxItem,
+    BottomTab
   },
   data () {
     return {

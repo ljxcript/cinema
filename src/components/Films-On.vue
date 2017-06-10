@@ -30,12 +30,13 @@
       <divider></divider>
     </group>
 
-
+    <bottom-tab></bottom-tab>
   </div>
 </template>
 
 <script>
 import { Flexbox, FlexboxItem, Group, Cell, XInput, XButton, Divider, XHeader, Icon } from 'vux'
+import BottomTab from './Bottom-Tab'
 
 export default {
   components: {
@@ -47,7 +48,8 @@ export default {
     XHeader,
     Flexbox,
     FlexboxItem,
-    Icon
+    Icon,
+    BottomTab
   },
   data () {
     return {

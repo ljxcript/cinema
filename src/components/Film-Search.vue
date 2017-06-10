@@ -11,11 +11,13 @@
       </flexbox>
     </div>
     
+    <bottom-tab></bottom-tab>
   </div>
 </template>
 
 <script>
 import { Search, XButton, Group, Flexbox, FlexboxItem } from 'vux'
+import BottomTab from './Bottom-Tab'
 
 export default {
   components: {
@@ -23,7 +25,8 @@ export default {
     XButton,
     Group,
     Flexbox,
-    FlexboxItem
+    FlexboxItem,
+    BottomTab
   },
   data () {
     return {
