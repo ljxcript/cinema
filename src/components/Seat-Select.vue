@@ -23,6 +23,7 @@
      </flexbox>
    </div>
    </div>
+   <center><x-button mini type="primary" @click.native="confirmBuy">确认购票</x-button></center>
     <bottom-tab></bottom-tab>
   </div>
 </template>
@@ -63,8 +64,8 @@ export default {
     }
   },
   methods: {
-    cinemaDetail: function (id) {
-      window.location = '#cinemaDetail/' + id
+    confirmBuy: function () {
+      window.location = '#orderConfirm'
     },
     filmSearch: function () {
       window.location = '#filmSearch'
