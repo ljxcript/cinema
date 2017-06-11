@@ -60,11 +60,11 @@ export default {
         },
         {
           id: 2,
-          name: '金逸珠江国际影城-广州大学城店',
-          score: '3.0',
-          distance: '400m',
-          address: '大学城GOGO新天地商业广场三层第3A028号',
-          priceRange: '￥30-35'
+          name: '飞扬影院-正佳店',
+          score: '8.0',
+          distance: '10km',
+          address: '天河区正佳广场7楼',
+          priceRange: '￥50-100'
         },
         {
           id: 3,
