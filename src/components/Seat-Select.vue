@@ -17,7 +17,7 @@
         <flexbox-item :span="1/8">&nbsp&nbsp&nbsp{{r}}</flexbox-item>
         <flexbox-item :span="7/8">
       <checker v-model="seatN" type="checkbox" default-item-class="seat" selected-item-class="seat-selected">
-        <checker-item v-for="c in column"  :value="{row: r, coulumn: c}"></checker-item>
+        <checker-item :class="pageIndex === i ? 'acIndex' : 'normIndex'" v-for="c in column"  :value="{row: r, coulumn: c}"></checker-item>
      </checker>
    </flexbox-item>
      </flexbox>
