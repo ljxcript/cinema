@@ -68,8 +68,8 @@ export default {
         },
         {
           id: 3,
-          name: '金逸珠江国际影城-广州大学城店',
-          score: '3.0',
+          name: '万达影院',
+          score: '6.0',
           distance: '400m',
           address: '大学城GOGO新天地商业广场三层第3A028号',
           priceRange: '￥30-35'
