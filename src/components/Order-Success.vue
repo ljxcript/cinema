@@ -1,6 +1,6 @@
 <template>
   <div>
-    <x-header>订单确认</x-header>
+    <x-header>订单成功</x-header>
     <form-preview header-label="支付成功" header-value="¥30.00" :body-items="list" :footer-buttons="buttons1"></form-preview>
     <br>
 
@@ -33,15 +33,18 @@ export default {
       }, {
         label: '联系方式',
         value: '15532342189'
+      }, {
+        label: '为了观赏体验，请按时赶到电影院',
+        value: ''
       }],
       buttons1: [{
         style: 'default',
-        text: '取消订单',
+        text: '返回首页',
         link: '/filmsOn'
       }, {
         style: 'primary',
         text: '正在出票',
-        link: '/orderSuccess'
+        link: '/'
       }],
       buttons2: [{
         style: 'primary',

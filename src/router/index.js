@@ -8,6 +8,7 @@ import FilmSearch from '@/components/Film-Search'
 import CinemaList from '@/components/Cinema-List'
 import OrderConfirm from '@/components/Order-Confirm'
 import SeatSelect from '@/components/Seat-Select'
+import OrderSuccess from '@/components/Order-Success'
 console.log(FilmsOn)
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/seatSelect',
       name: 'seatSelect',
       component: SeatSelect
+    },
+    {
+      path: '/orderSuccess',
+      name: 'orderSuccess',
+      component: OrderSuccess
     }
   ]
 })
