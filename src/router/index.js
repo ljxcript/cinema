@@ -6,6 +6,8 @@ import FilmsOn from '@/components/Films-On'
 import FilmDetail from '@/components/Film-Detail'
 import FilmSearch from '@/components/Film-Search'
 import CinemaList from '@/components/Cinema-List'
+import OrderConfirm from '@/components/Order-Confirm'
+import SeatSelect from '@/components/Seat-Select'
 console.log(FilmsOn)
 Vue.use(Router)
 
@@ -40,6 +42,16 @@ export default new Router({
       path: '/cinemaList',
       name: 'cinemaList',
       component: CinemaList
+    },
+    {
+      path: '/orderConfirm',
+      name: 'orderConfirm',
+      component: OrderConfirm
+    },
+    {
+      path: '/seatSelect',
+      name: 'seatSelect',
+      component: SeatSelect
     }
   ]
 })

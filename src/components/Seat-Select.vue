@@ -59,7 +59,7 @@ export default {
       cinemaList: [
       ],
       seatSelected: [],
-      seatOccupied: [{row:1,column:5}, {row:2, column: 3}, {row:4, column: 7}]
+      seatOccupied: [{row: 1, column: 5}, {row: 2, column: 3}, {row: 4, column: 7}]
     }
   },
   methods: {

@@ -98,7 +98,7 @@ export default {
   },
   methods: {
     buyTiket: function (id) {
-      console.log('buying ' + id)
+      window.location = '#/seatSelect'
     }
   }
 }
