@@ -9,6 +9,7 @@ import CinemaList from '@/components/Cinema-List'
 import OrderConfirm from '@/components/Order-Confirm'
 import SeatSelect from '@/components/Seat-Select'
 import OrderSuccess from '@/components/Order-Success'
+import PersonalCenter from '@/components/Personal-Center'
 console.log(FilmsOn)
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
       path: '/orderSuccess',
       name: 'orderSuccess',
       component: OrderSuccess
+    },
+    {
+      path: '/personalCenter',
+      name: 'personalCenter',
+      component: PersonalCenter
     }
   ]
 })
